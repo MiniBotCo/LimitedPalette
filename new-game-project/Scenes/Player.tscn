@@ -146,6 +146,7 @@ shape = SubResource("CapsuleShape2D_l71ge")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(2.00003, 0)
 scale = Vector2(0.8, 0.8)
+
 zoom = Vector2(1.25, 1.25)
 position_smoothing_speed = 10.0
 
@@ -166,3 +167,4 @@ one_shot = true
 target_position = Vector2(256, 0)
 
 [connection signal="timeout" from="JumpHeightTimer" to="." method="_on_jump_height_timer_timeout"]
+

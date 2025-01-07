@@ -7,16 +7,19 @@
 size = Vector2(113, 115)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(0.8, 0.8)
 script = ExtResource("1_tmt86")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("1_mdpmh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -1.5)
+scale = Vector2(0.8, 0.8)
 shape = SubResource("RectangleShape2D_quo0w")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(2.00003, 0)
-scale = Vector2(0.44, 1)
+scale = Vector2(0.8, 0.8)
 zoom = Vector2(1.5, 1)

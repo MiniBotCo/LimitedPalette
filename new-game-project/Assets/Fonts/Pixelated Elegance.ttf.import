@@ -1,0 +1,34 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://p2e7po6dd2bd"
+path="res://.godot/imported/Pixelated Elegance.ttf-6d3b4d753187a00b3357120f4fe45de1.fontdata"
+
+[deps]
+
+source_file="res://Assets/Fonts/Pixelated Elegance.ttf"
+dest_files=["res://.godot/imported/Pixelated Elegance.ttf-6d3b4d753187a00b3357120f4fe45de1.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

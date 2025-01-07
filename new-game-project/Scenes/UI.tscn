@@ -1,0 +1,86 @@
+[gd_scene load_steps=7 format=3 uid="uid://c2ipy5l8tkt87"]
+
+[ext_resource type="Texture2D" uid="uid://c107318rmkyk3" path="res://Assets/UI/HealthEmpty.png" id="1_lw4f0"]
+[ext_resource type="Texture2D" uid="uid://djt5lfywk0h4s" path="res://Assets/UI/HealthFull.png" id="2_uqcyq"]
+[ext_resource type="FontFile" uid="uid://p2e7po6dd2bd" path="res://Assets/Fonts/Pixelated Elegance.ttf" id="3_0r1ge"]
+[ext_resource type="Texture2D" uid="uid://dx0phcess13u4" path="res://Assets/UI/EyeOpen.png" id="4_vgpqx"]
+[ext_resource type="Texture2D" uid="uid://c3wikr4j8rk0p" path="res://Assets/UI/EyeClosed.png" id="5_c3i55"]
+
+[sub_resource type="Theme" id="Theme_qxhkm"]
+Button/fonts/font = ExtResource("3_0r1ge")
+CheckBox/fonts/font = ExtResource("3_0r1ge")
+CheckButton/fonts/font = null
+CodeEdit/fonts/font = null
+ColorPickerButton/fonts/font = null
+GraphNodeTitleLabel/fonts/font = null
+ItemList/fonts/font = null
+Label/fonts/font = ExtResource("3_0r1ge")
+LineEdit/fonts/font = null
+LinkButton/fonts/font = null
+MenuBar/fonts/font = null
+MenuButton/fonts/font = null
+OptionButton/fonts/font = null
+PopupMenu/fonts/font = null
+PopupMenu/fonts/font_separator = null
+ProgressBar/fonts/font = null
+RichTextLabel/fonts/bold_font = null
+RichTextLabel/fonts/bold_italics_font = null
+RichTextLabel/fonts/italics_font = null
+RichTextLabel/fonts/mono_font = null
+RichTextLabel/fonts/normal_font = null
+TabBar/fonts/font = null
+TabContainer/fonts/font = null
+TextEdit/fonts/font = null
+TooltipLabel/fonts/font = null
+Tree/fonts/font = null
+Tree/fonts/title_button_font = null
+Window/fonts/title_font = null
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HealthBar" type="TextureProgressBar" parent="."]
+layout_mode = 2
+offset_left = 1013.0
+offset_top = 502.0
+offset_right = 1045.0
+offset_bottom = 534.0
+scale = Vector2(4, 4)
+value = 100.0
+fill_mode = 3
+texture_under = ExtResource("1_lw4f0")
+texture_progress = ExtResource("2_uqcyq")
+
+[node name="HealthText" type="Label" parent="."]
+layout_mode = 2
+offset_left = 1039.0
+offset_top = 485.0
+offset_right = 1121.0
+offset_bottom = 501.0
+theme = SubResource("Theme_qxhkm")
+theme_override_font_sizes/font_size = 18
+text = "Health"
+
+[node name="EyeOpen" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 10.0
+offset_right = 55.0
+offset_bottom = 50.0
+scale = Vector2(3, 3)
+texture = ExtResource("4_vgpqx")
+
+[node name="EyeClosed" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 15.0
+offset_top = 10.0
+offset_right = 55.0
+offset_bottom = 50.0
+scale = Vector2(3, 3)
+texture = ExtResource("5_c3i55")

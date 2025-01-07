@@ -4,6 +4,12 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -600.0
 var prevVelocity: Vector2 = Vector2.ZERO #Tried to implement air friction
+var time_last_pressed = 0 #gonna use for coyote time for jump
+var time_now_pressed = 0 #gonna use for coyote time for jump
+
+
+
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -28,8 +34,6 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	
-	prevVelocity = velocity
 	
 	move_and_slide()
 	
-	prevVelocity = velocity #For air friction

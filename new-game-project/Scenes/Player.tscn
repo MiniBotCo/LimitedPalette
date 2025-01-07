@@ -1,25 +1,33 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8gkh1s3srie6"]
+[gd_scene load_steps=5 format=3 uid="uid://b8gkh1s3srie6"]
 
-[ext_resource type="Texture2D" uid="uid://b4lc5k1gjden4" path="res://Assets/icon.svg" id="1_mdpmh"]
 [ext_resource type="Script" path="res://Scripts/playerScript.gd" id="1_tmt86"]
+[ext_resource type="Texture2D" uid="uid://causd02h0uwps" path="res://Assets/Player/Player.png" id="2_gpbsn"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_quo0w"]
-size = Vector2(113, 115)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f7vr8"]
+radius = 12.5
+height = 100.625
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t6e22"]
+radius = 18.75
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 scale = Vector2(0.8, 0.8)
 script = ExtResource("1_tmt86")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.8, 0.8)
-texture = ExtResource("1_mdpmh")
+scale = Vector2(3, 3)
+texture = ExtResource("2_gpbsn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -1.5)
+position = Vector2(-1.19209e-07, 7.5)
 scale = Vector2(0.8, 0.8)
-shape = SubResource("RectangleShape2D_quo0w")
+shape = SubResource("CapsuleShape2D_f7vr8")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(2.00003, 0)
 scale = Vector2(0.8, 0.8)
 zoom = Vector2(1.5, 1)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-2.38419e-07, -23.75)
+shape = SubResource("CircleShape2D_t6e22")

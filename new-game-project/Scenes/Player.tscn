@@ -162,7 +162,4 @@ one_shot = true
 
 [node name="UI" parent="UICanvasLayer" instance=ExtResource("29_mhqjx")]
 
-[node name="RayCast2D" type="RayCast2D" parent="."]
-target_position = Vector2(256, 0)
-
 [connection signal="timeout" from="JumpHeightTimer" to="." method="_on_jump_height_timer_timeout"]

@@ -42,15 +42,11 @@ func _physics_process(delta: float) -> void:
 	
 	if velocity.x > 0:
 		$PlayerSprite.flip_h = false
-		$RayCast2D.target_position = Vector2i(256, 0)
 	elif velocity.x < 0:
 		$PlayerSprite.flip_h = true
-		$RayCast2D.target_position = Vector2i(-256, 0)
-		
 	
 	move_and_slide()
 	
-	print(to_local($RayCast2D.get_collision_point()))
 	#$PlayerSprite.x = move_toward($PlayerSprite.scale.x, 1, 1 * delta)
 	#$PlayerSprite.y = move_toward($PlayerSprite.scale.y, 1, 1 * delta)
 

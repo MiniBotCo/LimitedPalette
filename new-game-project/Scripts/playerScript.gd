@@ -20,6 +20,7 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		$PlayerSprite.play("Jump")
+		#$PlayerSprite.scale = Vector2(0.7, 1.3)
 		velocity.y = JUMP_VELOCITY
 		$JumpHeightTimer.start()
 		
@@ -45,10 +46,13 @@ func _physics_process(delta: float) -> void:
 	elif velocity.x < 0:
 		$PlayerSprite.flip_h = true
 		$RayCast2D.target_position = Vector2i(-256, 0)
+		
 	
 	move_and_slide()
 	
 	print(to_local($RayCast2D.get_collision_point()))
+	#$PlayerSprite.x = move_toward($PlayerSprite.scale.x, 1, 1 * delta)
+	#$PlayerSprite.y = move_toward($PlayerSprite.scale.y, 1, 1 * delta)
 
 func _on_jump_height_timer_timeout() -> void:
 	can_increase_height = false

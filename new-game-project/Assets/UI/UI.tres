@@ -1,0 +1,33 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cgs3isdknf7m0"]
+
+[ext_resource type="FontFile" uid="uid://p2e7po6dd2bd" path="res://Assets/Fonts/Pixelated Elegance.ttf" id="1_qgw7i"]
+
+[resource]
+Button/fonts/font = ExtResource("1_qgw7i")
+CheckBox/fonts/font = ExtResource("1_qgw7i")
+CheckButton/fonts/font = null
+CodeEdit/fonts/font = null
+ColorPickerButton/fonts/font = null
+GraphNodeTitleLabel/fonts/font = null
+ItemList/fonts/font = null
+Label/fonts/font = ExtResource("1_qgw7i")
+LineEdit/fonts/font = null
+LinkButton/fonts/font = null
+MenuBar/fonts/font = null
+MenuButton/fonts/font = null
+OptionButton/fonts/font = null
+PopupMenu/fonts/font = null
+PopupMenu/fonts/font_separator = null
+ProgressBar/fonts/font = null
+RichTextLabel/fonts/bold_font = null
+RichTextLabel/fonts/bold_italics_font = null
+RichTextLabel/fonts/italics_font = null
+RichTextLabel/fonts/mono_font = null
+RichTextLabel/fonts/normal_font = null
+TabBar/fonts/font = null
+TabContainer/fonts/font = null
+TextEdit/fonts/font = null
+TooltipLabel/fonts/font = null
+Tree/fonts/font = null
+Tree/fonts/title_button_font = null
+Window/fonts/title_font = null

@@ -41,14 +41,10 @@ func _physics_process(delta: float) -> void:
 	
 	if velocity.x > 0:
 		$PlayerSprite.flip_h = false
-		$RayCast2D.target_position = Vector2i(256, 0)
 	elif velocity.x < 0:
 		$PlayerSprite.flip_h = true
-		$RayCast2D.target_position = Vector2i(-256, 0)
 	
 	move_and_slide()
-	
-	print(to_local($RayCast2D.get_collision_point()))
 
 func _on_jump_height_timer_timeout() -> void:
 	can_increase_height = false

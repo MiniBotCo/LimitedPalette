@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b8gkh1s3srie6" path="res://Scenes/Player.tscn" id="1_eur1c"]
 [ext_resource type="Texture2D" uid="uid://dhdd3uhadwvrb" path="res://Assets/TileMaps/tilemap.png" id="2_b8458"]
+[ext_resource type="Texture2D" uid="uid://0flkpreh7etr" path="res://Assets/TileMaps/platform.png" id="3_dof2q"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_w1p55"]
 
@@ -77,10 +78,8 @@ physics_layer_0/collision_layer = 1
 physics_layer_0/physics_material = SubResource("PhysicsMaterial_w1p55")
 sources/0 = SubResource("TileSetAtlasSource_sdapb")
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_cr7tr"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fuqwy"]
-size = Vector2(63, 10)
+size = Vector2(62, 7)
 
 [sub_resource type="Animation" id="Animation_tsqcx"]
 length = 0.001
@@ -133,10 +132,12 @@ tile_set = SubResource("TileSet_rka2v")
 position = Vector2(609, 5)
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
-scale = Vector2(65, 10.5)
-texture = SubResource("PlaceholderTexture2D_cr7tr")
+position = Vector2(3.33786e-06, -0.500001)
+scale = Vector2(1.9, 1.9)
+texture = ExtResource("3_dof2q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_fuqwy")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="StaticBody2D"]

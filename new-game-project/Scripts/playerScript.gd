@@ -44,8 +44,6 @@ func _physics_process(delta: float) -> void:
 		$PlayerSprite.flip_h = false
 	elif velocity.x < 0:
 		$PlayerSprite.flip_h = true
-		$RayCast2D.target_position = Vector2i(-256, 0)
-		
 	
 	move_and_slide()
 	

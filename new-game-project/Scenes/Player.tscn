@@ -151,7 +151,7 @@ position_smoothing_speed = 10.0
 
 [node name="PlayerSprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_okac4")
-animation = &"Jump"
+animation = &"Idle"
 autoplay = "Idle"
 
 [node name="JumpHeightTimer" type="Timer" parent="."]

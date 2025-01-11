@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=4 uid="uid://bbaqpb6hphsto"]
+[gd_scene load_steps=12 format=4 uid="uid://bbaqpb6hphsto"]
 
 [ext_resource type="PackedScene" uid="uid://b8gkh1s3srie6" path="res://Scenes/Player.tscn" id="1_eur1c"]
+[ext_resource type="Texture2D" uid="uid://ci44qcxqbrlv5" path="res://Assets/background.png" id="1_fiojq"]
 [ext_resource type="Texture2D" uid="uid://dhdd3uhadwvrb" path="res://Assets/TileMaps/tilemap.png" id="2_b8458"]
 [ext_resource type="Texture2D" uid="uid://0flkpreh7etr" path="res://Assets/TileMaps/platform.png" id="3_dof2q"]
 
@@ -120,6 +121,11 @@ _data = {
 }
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(609, 0)
+scale = Vector2(2.76763, 3.97461)
+texture = ExtResource("1_fiojq")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_eur1c")]
 position = Vector2(-152, -60)
